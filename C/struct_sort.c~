@@ -1,0 +1,64 @@
+#include<stdio.h>
+ struct emp {
+  char name[100];
+  int roll;
+ }c[5];
+
+struct emp enter(struct emp c[5])
+for(i = 0; i < 5; i++)
+{
+    printf("enter name");
+    scanf("%s", c.name[i]);
+    printf("enter roll");
+    scanf("%d", &c.roll[i]);
+}
+struct emp sort(struct emp c[5])
+{
+    struct emp temp
+    for(j = 0; j < n-1; j++)
+    {
+     	for(k = 0;k < n-1-i; k++)
+        {
+            if(c.roll[k] > c.roll[k+1])
+             {
+                temp.roll = c.roll[k];
+                c.roll[k] = c.roll[k+1];
+                 c.roll[k+1] = temp.roll;
+                strcpy(temp.name, c.name[k]);
+		         strcpy(c.name[k], c.name[k+1]);
+                 strcpy(c.name[k+1], temp.name);
+              }
+        }
+    }
+}
+
+
+void main()
+{
+	 int n,i,j,k;
+	enter(c);
+	 
+
+	for(j = 0; j < n-1; j++)
+	{
+		 for(k = 0; k < n-1-i; k++)
+		   {
+		      if(c.roll[k] > c.roll[k+1])
+		         {
+		            temp.roll = c.roll[k];
+		            c.roll[k] = c.roll[k+1];
+		             c.roll[k+1]= temp.roll;
+		            strcpy(temp.name,c.name[k]);
+			 		strcpy(c.name[k],c.name[k+1]);
+		             strcpy(c.name[k+1],temp.name);
+		           }
+		    }
+	  }
+	for(i = 0; i < n; i++)
+	 {
+	   printf("%s",c.name[i]);
+	   printf("%d\n",c.roll[i]);
+	 }
+}
+
+

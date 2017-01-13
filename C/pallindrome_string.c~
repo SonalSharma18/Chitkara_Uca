@@ -1,0 +1,43 @@
+#include<stdio.h>
+char * palcheck(char [],int);
+void main()
+{
+  char a[100][100]={0};char res[100][100]={0};
+   int i,l,n,t,k=0,m=0;
+   printf("enter range");
+   scanf("%d",&n);
+  getchar();
+   
+   for(i=0;i<n;i++)
+   {
+     gets(a[i]);
+     l=strlen(a[i]);
+//printf("%d \n",l);
+     strcpy(res[k],palcheck(a[i],l));
+    k++;
+    //m++;
+
+    }for(i=0;i<n;i++)
+	{
+if((strcmp(res[i],"")!=0))
+     printf("%s \n",res[i]);
+}
+
+
+ }
+char * palcheck(char a[],int l)
+ {
+   char b[100]={0};
+   int i,j;
+ for(i=0,j=l-1;i<l&&j>=0;i++,j--)
+     {
+       b[i]=a[j];
+     }
+if(strcmp(a,b)==0)
+   return a;
+else 
+return "";
+}
+  
+ 
+

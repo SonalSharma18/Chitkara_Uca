@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	int i, j, k, l, c;
+    char str[100] = {0}, rev[100] = {0};
+	printf("enter string");
+	//gets(str);
+	scanf("%[^\n]",str);
+	l = strlen(str);
+	for(i = 1, j = l; i <= l, j >= 1; i++, j--)
+ 	{
+   		rev[i] = str[j];
+ 	}
+	c = 0;
+	for(k = 2; k <= l; k++)
+	{
+  		if((str[k] - str[k-1]) != (rev[k] - rev[k-1]))
+    	{
+     		c++;
+    	}
+ 	}
+	if(c == 0)
+ 	printf("funny\n");
+ 	else
+ 	printf("not funny\n");
+}
+
+   

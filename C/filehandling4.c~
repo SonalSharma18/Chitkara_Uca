@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{ 
+    int c = 0, w = 0;
+    char ch;
+    FILE *f;
+    //FILE *f1;
+    f = fopen("file1", "r");
+   	// f1=fopen("new","w");
+    ch=fgetc(f);
+    while(ch!=EOF)
+    {
+      	if(ch=='\n')
+      	w++;
+   		//  else if((ch>=97 && ch<=122) || (ch>=65 && ch<=90) || (ch ==' ')) 
+      	c++;
+      	ch=fgetc(f);
+ 
+  
+    }
+	printf("no of characters %d",c);
+	printf("no of lines %d",w);
+	fclose(f);
+}

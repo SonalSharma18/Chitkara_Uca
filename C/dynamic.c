@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+ 	typedef int i;
+ 	i n;
+ 	scanf("%d",&n);
+ 	i *a = (int*)malloc(n*sizeof(int));
+ 	i *p = a;
+ 	i j;
+ 	printf("enter values");
+ 	for(j = 0; j < n; j++)
+	{
+  		scanf("%d", &p[j]);
+	}
+	printf("values are");
+	for(j = 0; j < n; j++)
+	{
+  		printf("%d", p[j]);
+	}
+	
+	printf("\n");
+	printf("%p", p);
+}
+

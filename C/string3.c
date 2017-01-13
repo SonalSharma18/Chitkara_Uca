@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    int i, j;
+  	char str[100];
+  	printf("enter string");
+  	gets(str);
+ 	j = strlen(str);
+ 	for(i = 0; i <= j; i++)
+ 	{
+   		if(isalpha(str[i]) != 0)
+		{
+        	printf("%c", str[i]);
+  		}
+	}
+}
+   

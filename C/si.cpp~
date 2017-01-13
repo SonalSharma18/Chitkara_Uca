@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+float cal(int,int,int);
+int main()
+ {
+   int p,t,r,age;
+   float s;
+    cin>>p>>t>>age;
+    if(age>60)
+   s=cal(p,t,12);   
+  else
+   s=cal(p,t,10);
+  cout<<"ans is"<<s<<"\n";
+  return 0;
+  }
+
+float cal(int p,int t,int r)
+  {
+    float s;
+  s=(p*t*r)/100;
+  return s;
+  }
+    
+

@@ -1,0 +1,42 @@
+#include<stdio.h>
+void square(int [100][100],int,int);
+void main()
+{
+  	int a[100][100]={0},m,n;
+  	printf("enter no of rows");
+  	scanf("%d",&m);
+  	printf("enter no of columns");
+  	scanf("%d",&n);
+  	if(m==n)
+  	{
+    	square(a,m,n);
+   	}
+}
+void square(int a[100][100],int m,int n)
+{
+    int i,j,l=0,k=0,t;
+   	for(i=1;i<=m;i++)
+    {
+      	for(j=1,t=n;j<=m-i,t>n-i+1;j++,t--)
+       	{
+        	l=1;
+      		a[i][j]=l;
+       		k=-1;
+      		a[i][t]=k;
+      	}	
+       for(t=n;t>(n-i+1);t--)
+       {
+           k=-1;
+           a[i][t]=k;
+       }
+    }
+   for(i=1;i<=m;i++)
+   {
+   		for(j=1;j<=n;j++)
+ 		{
+             printf("%d ",a[i][j]);
+        }
+		printf("\n");
+   }
+}
+

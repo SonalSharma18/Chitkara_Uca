@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+  int i,j,arr[100]={0},num,temp;
+  printf("enter the range\n ");
+  scanf("%d",&num);
+   printf("enter the values\n ");
+  for(i=0;i<num;i++)
+  {
+    scanf("%d",&arr[i]);
+  }
+    
+  for(i=0;i<num-1;i++)  
+  {
+    for(j=0;j<num-i-1;j++)
+    {
+      if(arr[j]>arr[j+1])
+      {
+        temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+      }
+     }
+   }
+    printf("sorted list\n ");
+   for(i=0;i<num;i++)
+  {
+    printf("%d \n",arr[i]);
+  }
+   return 0;
+ }       

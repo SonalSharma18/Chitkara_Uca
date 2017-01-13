@@ -1,0 +1,35 @@
+// program to find the number that occurs maximum number of times.
+
+
+#include<stdio.h>
+void main()
+{
+ 	int a[100] = {0}, n, i, c, j;
+ 	printf("enter no. of entries");
+ 	scanf("%d", &n);
+ 	printf("enter no of values");
+ 	for(i = 0; i < n; i++)
+ 	{
+   		scanf("%d", &a[i]);
+ 	}
+	for(i = 0; i < n; i++)
+    { 
+        c = 0;
+     	 for(j = i; j <= n; j++)
+         {
+     	      if(a[i] == a[j])
+              {
+              	  c++;
+              }
+         }
+        if(c > n/2)
+		{
+  			printf("ans");
+   			printf("%d", a[i]);
+   			printf("\n");
+ 
+		}
+	}
+}
+
+

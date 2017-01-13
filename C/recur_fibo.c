@@ -1,0 +1,24 @@
+#include<stdio.h>
+int fibbo(int);
+void main()
+{
+	int a, i;
+	scanf("%d", &a);
+	for(i = 1; i <= a; i++)
+	printf("%d", fibbo(i));
+ 
+}
+
+
+int fibbo(int n)
+{
+	if(n == 1)
+	return 0;
+	if(n <= 3)
+	return 1;
+	else
+	return(fibbo(n-1)+fibbo(n-2));
+}
+
+
+

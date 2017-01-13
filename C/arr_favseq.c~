@@ -1,0 +1,43 @@
+#include<stdio.h>
+int a[100]={0},n,b[100]={0},k;
+void check(int []);
+void main()
+{
+     int i,d;
+     printf("enter range");
+     scanf("%d",&n);
+     printf("enter values");
+     for(i=0;i<n;i++)
+     {
+         scanf("%d",&a[i]);
+         check(a[i]);
+     }
+}
+  
+void check(int s)
+{
+      int j, l, t, i;
+      printf("enter second range");
+      scanf("%d",&k);
+      printf("enter second values");
+      for(j=0;j<k;j++)
+      scanf("%d",&b[k]);
+      for(l=0;l<n;)
+      {
+           if(s==b[l])
+           {
+               i++;
+               l++;
+             
+           }
+      }
+      for(j=0;j<k;j++)
+      printf("%d",b[k]); 
+      printf("new");
+      printf("%d",a[n]);
+}
+
+
+        
+
+} 

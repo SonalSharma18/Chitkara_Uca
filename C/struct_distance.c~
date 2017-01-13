@@ -1,0 +1,43 @@
+#include<stdio.h>
+struct distance
+ {
+   int a;
+   int b;
+ }c[2];
+
+struct distance entry(struct distance c[2])
+{
+    int i;
+    for(i=0;i<2;i++)
+     {
+       printf("enter distance");
+       scanf("%d %d",&c[i].a,&c[i].b);
+     }
+}
+struct distance add(struct distance c[2])
+{
+    struct distance t={0,0};
+    int i;
+    for(i=0;i<2;i++)
+    {
+     t.b=t.b+c[i].b;
+     if(t.b>12)
+    {
+     t.a=t.a+c[i].a+1;
+     t.b=t.b-12;
+    }
+   else
+   t.a=t.a+c[i].a;
+
+    }
+return t;
+}
+void main()
+ {
+   struct distance y;
+   entry(c);
+   y=add(c);
+ printf("ans is %d feet and %d inch",y.a,y.b);
+ }
+
+   

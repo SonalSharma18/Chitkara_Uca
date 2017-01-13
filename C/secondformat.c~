@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+ int n,x,y,z,k;
+printf("enter seconds");
+scanf("%d",&n);
+x= n/3600;
+y=n%3600;
+z=y/60;
+k=y%60;
+printf("%d:%d:%d:",x,z,k);
+}

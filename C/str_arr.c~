@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+  int i,j,n,m;
+  char a[100][100],str[10];
+//  printf("enter no of words");
+  // scanf("%d",&n);
+  //printf("enter no of letters");
+  //scanf("%d",&m);
+  
+  for(i=1;i<=5;i++)
+       {
+               gets(str);
+                if(strcmp(str,"*")==0)
+                  break;
+		strcpy(a[i],str);
+             }
+     
+      
+       
+
+ for(i=1;i<=5;i++)
+       
+        
+             {
+		
+                puts(a[i]);
+                
+            }
+            
+       
+}
