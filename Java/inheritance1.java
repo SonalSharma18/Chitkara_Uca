@@ -1,0 +1,58 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class abc
+{
+	  int a,b;
+	  abc()
+	  {
+		a=0;
+		b=0;
+	  }
+	  
+	  abc(int c)
+	  {
+		a=c;
+		b=c;
+  	  }
+  
+ }
+ 
+ 
+ 
+ 
+ 
+ class abc1 extends abc
+ {
+	   int d;
+	   
+	   abc1()
+	   {
+		 super();
+		 d=0;
+	   }
+	   
+	   abc1(int e,int f)
+	   {
+		   super(e);
+		   d=f;
+		}
+		
+		void vol()
+		{
+		  int v=a*b*d;
+		  System.out.println("ans is :"+ v);
+		}
+}
+    
+    
+    
+class inheritance1
+{
+      public static void main(String args[])
+      { 
+            abc1 obj=new abc1(1,2);
+            obj.vol();
+      }
+}    
